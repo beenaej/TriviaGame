@@ -242,7 +242,7 @@ console.log('I am working');
  				numCorrect++;
 
  				//color the answers green
- 				answersContainers[i].style.color = 'lightgreen';
+ 				answerContainers[i].style.color = 'lightgreen';
  			}
  			//if answer is wrong or blank
  			else{
