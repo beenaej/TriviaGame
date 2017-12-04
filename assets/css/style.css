@@ -6,9 +6,11 @@ body{
 	color: #333;
 }
 
-h1{
+#titleWrapper{
 	text-align: center;
 	border: 5px solid navy;
+	color: navy;
+	text-decoration: bolder;
 }
 .question{
 	font-weight: 600;
@@ -26,7 +28,7 @@ h1{
 	padding: 10px;
 	cursor: pointer;
 	margin-bottom: 20px;
-	margin-left: 50px;
+	margin-left: 170px;
 }
 #submit:hover{
 	background-color: #3a8;
@@ -42,7 +44,7 @@ h1{
 	padding: 10px;
 	cursor: pointer;
 	margin-bottom: 20px;
-	margin-left: 200px;
+	margin-left: 170px;
 }
 #done:hover{
 	background-color: #3a8;
@@ -58,7 +60,7 @@ h1{
 	padding: 10px;
 	cursor: pointer;
 	margin-bottom: 20px;
-	margin-left: 350px;
+	margin-left: 50px;
 }
 #Start:hover{
 	background-color: #3a8;
