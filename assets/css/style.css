@@ -1,0 +1,65 @@
+
+body{
+	background-image: url("../images/world_map3.png");
+	font-size: 20px;
+	font-family: sans-serif;
+	color: #333;
+}
+
+h1{
+	text-align: center;
+	border: 5px solid navy;
+}
+.question{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: navy;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 50px;
+}
+#submit:hover{
+	background-color: #3a8;
+}
+
+#done{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: red;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 200px;
+}
+#done:hover{
+	background-color: #3a8;
+}
+
+#Start{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: navy;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 350px;
+}
+#Start:hover{
+	background-color: #3a8;
+}
