@@ -9,15 +9,20 @@
 </head>
 
 <body>
+	<div id="titleWrapper">
     <h1>Totally Trivial Trivia Game</h1>
-    <button id="Start">Start</button>
+    <p>The rules of the game: The timer starts when screen refreshes. The done button stops the timer and the start button restarts it. Pressing on the Submit button submits your quiz once you are done. Your score is shown on the bottom and your right answers turn green and your wrong answers turn red.</p>
+    </div> 
+
+    
     <div class="container">
         <div id="timertext">Time Remaining:<span id="timer"></span></div>
-        <div id="quiz">this will be replaced with list of questiones</div>
+        <div id="quiz">this will be replaced with list of questions</div>
         <div id="results"></div>
     </div>
     <div class="row">
         <div class="col-lg">
+        	<button id="Start">Start</button>
             <button id="submit">Submit</button>
             <button id="done">Done</button>
         </div>
