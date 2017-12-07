@@ -34,7 +34,7 @@ var questions = [
         correctAnswer: 'b'
     },
     {
-        question: "In the devilish year of 1666, a great fir occured in this European Capital city. Half of it burned down",
+        question: "In the devilish year of 1666, a great fire occured in this European Capital city. Half of it burned down",
         answers: {
             a: 'Vienna',
             b: 'Paris',
@@ -130,53 +130,32 @@ var quizContainer = document.getElementById('quiz');
 var resultsContainer = document.getElementById('results');
 var submitButton = document.getElementById('submit');
 
-var number = 100;
-var intervalId;
+
+var myTimerObj = (function(document){
+   
+   var myTimer;
+
+   function start() {
+     myTimer = setInterval(myClock, 1000);
+     var c = 100;
+
+     function myClock() {
+       document.getElementById("timer").innerHTML = --c;
+       if (c == 0) {
+         clearInterval(myTimer);
+         alert("Your time is up!");
+       }
+     }
+   }
+   
+   function end() {
+       clearInterval(myTimer)
+   }
+
+   return {start:start, end:end};
+ })(document);
 
 
-
-//  When the done button gets clicked, run the stop function.
-    $("#done").on("click", stop);
-
-//  Timer begins When the start button gets clicked
-    $("#Start").on("click", run);
-
-
-    function run() {
-      intervalId = setInterval(decrement, 1000);
-    }
-
-//  The decrement function.
-    function decrement() {
-
-      //  Decrease number by one.
-      number--;
-
-      //  Show the number in the #show-number tag.
-      $("#timer").html("<h2>" + number + "</h2>");
-
-
-      //  Once number hits zero...
-      if (number === 0) {
-
-        //  ...run the stop function.
-        stop();
-
-        //  Alert the user that time is up.
-        alert("Time Up!");
-      }
-    }
-
-  function stop() {
-
-      //  Clears our intervalId
-      //  We just pass the name of the interval
-      //  to the clearInterval function.
-      clearInterval(intervalId);
-    }
-
-    //  Execute the run function.
-    run();
 
 
 generateQuiz(questions, quizContainer, resultsContainer, submitButton);
@@ -252,7 +231,7 @@ console.log('I am working');
  		}
 
  		//show number of correct answers out of total
- 		resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+ 		resultsContainer.innerHTML = 'You got ' + numCorrect + ' out of ' + questions.length + ' questions right!';
  } 
 
 showQuestions(questions, quizContainer);
