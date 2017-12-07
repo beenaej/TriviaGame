@@ -65,3 +65,25 @@ body{
 #Start:hover{
 	background-color: #3a8;
 }
+
+#timertext{
+	color: navy;
+	text-decoration: bolder;
+	text-align: center;
+	font-size: 30px;
+	/*background-color: white;*/
+	/*border: 3px solid navy;*/
+}
+
+#quiz{
+	margin-top: 20px;
+}
+
+#results{
+	color: navy;
+	text-decoration: bolder;
+	text-align: center;
+	font-size: 30px;
+	background-color: white;
+	border: 3px solid navy;
+}
