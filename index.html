@@ -11,22 +11,24 @@
 <body>
 	<div id="titleWrapper">
     <h1>Totally Trivial Trivia Game</h1>
-    <p>The rules of the game: The timer starts when screen refreshes. The done button stops the timer and the start button restarts it. Pressing on the Submit button submits your quiz once you are done. Your score is shown on the bottom and your right answers turn green and your wrong answers turn red.</p>
+    <p>The rules of the game: The timer starts when you, the player click Start. The Done button stops the timer. Pressing on the Submit button submits your quiz once you are done. Your score is shown on the bottom and your right answers turn green and your wrong answers turn red.</p>
+    <div class="row">
+        <div class="col-lg">
+        	<button id="Start" onclick="myTimerObj.start()">Start</button>
+			<button id="done" onclick="myTimerObj.end()">Done</button>
+        	<button id="submit">Submit</button>
+           	<div id="timertext">Time Remaining:<span id="timer"></span></div>
+        </div>
+    </div>
     </div> 
 
     
     <div class="container">
-        <div id="timertext">Time Remaining:<span id="timer"></span></div>
+        
         <div id="quiz">this will be replaced with list of questions</div>
         <div id="results"></div>
     </div>
-    <div class="row">
-        <div class="col-lg">
-        	<button id="Start">Start</button>
-            <button id="submit">Submit</button>
-            <button id="done">Done</button>
-        </div>
-    </div>
+    
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
